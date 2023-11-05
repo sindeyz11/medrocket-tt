@@ -6,6 +6,12 @@ from datetime import datetime
 ENDPOINT_USERS = 'https://json.medrocket.ru/users'
 ENDPOINT_TODOS = 'https://json.medrocket.ru/todos'
 
+'''
+Добавил файл script_fixed.py, фиксы ниже. Желательно проверять его.
+1) Фикс именования старого отчета для Linux (56 и 76 строки)
+2) Убрал list() (105 строка в старом файле, 114 в новом)
+'''
+
 
 def get_data_from_endpoint(endpoint: str) -> []:
     try:
